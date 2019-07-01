@@ -3,13 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@types/jest": "24.0.15",
     "@types/node": "12.0.10",
+    "@types/node-sass": "^4.11.0",
     "@types/react": "16.8.22",
     "@types/react-dom": "16.8.4",
+    "@types/react-redux": "^7.1.0",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap4-modal": "^1.7.2",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "typescript": "3.5.2"
   },
   "scripts": {
@@ -32,5 +45,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.9.4",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest-websocket-mock": "^1.4.0",
+    "mock-socket": "^8.0.5"
   }
 }

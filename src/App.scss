@@ -1,0 +1,79 @@
+.minesweeper {
+  margin-top: 80px;
+  width: 460px;
+  display: inline-block;
+
+  &.level2 {
+    width: 1200px;
+  }
+
+  &.level3 {
+    width: 1800px;
+  }
+
+  &.level4 {
+    width: 6800px;
+  }
+
+  .header {
+    background-color: #006666;
+    color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+
+    select {
+      width: 106px;
+      display: inline-block;
+      border-radius: 0;
+      border: none;
+    }
+
+    button {
+      float: right;
+      font-size: 28px;
+      padding: 0;
+      line-height: 58px;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+  line-height: $size;
+}
+
+.cell {
+  border: none;
+  border-radius: 0;
+  background-color: #53d386;
+  color: #d9d9d9;
+
+  &.level1 {
+    @include square(46px);
+  }
+  &.level2 {
+    @include square(30px);
+  }
+  &.level3{
+    @include square(18px);
+  }
+  &.level4 {
+    @include square(16px);
+    font-size: 10px;
+  }
+
+  &.light {
+    background-color: #72e18a;
+  }
+
+  &.open {
+    background-color: #9cac8b;
+  }
+  &.open.light {
+    background-color: #adc098;
+  }
+}
