@@ -3,7 +3,7 @@ import React from "react";
 import {StatusTypes} from "../containers/MinesweeperGame";
 import {LEVELS} from "../constants";
 
-interface GameResultModalProps {
+export interface GameResultModalProps {
     showModal: boolean,
     status: StatusTypes,
     level: number,
